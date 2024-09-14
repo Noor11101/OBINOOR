@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load bootstrap5 %}
+
+
+{% block title %} Profile {% endblock title %}
+
+{% block body %}
+
+
+
+
+
+
+<section>
+    <div class="container">
+        <div class="row pt-5 pb-5">
+            <h1 class="mt-3 mb-3 pt-3">Welcome,{{ request.user.username }}</h1>
+
+            <div classc="col-lg-6 col-sm-12">
+                <div class="picbox">
+                    <img src="{{ request.user.profile_pic.url }}" alt="Profile Picture">
+                </div>
+
+                <h3 class="mt-3 mb-3">{{ request.user.first_name }} {{ request.user.last_name }}</h3>
+                <h5>{{ request.user.bio }}</h5>
+                <div class=" m-5">
+                    <button onclick="window.location.href='{% url 'logout' %}'" class="buttonx ">log out</button>
+                    <button onclick="window.location.href='{% url 'account-settings' %}'" class="buttonx ">settings</button>
+                </div> 
+
+                
+
+            </div>
+
+            <div class="col-lg-6 col-sm-12">
+                <img class="mov-img img-fluid w-100 h-auto  "
+                src="{% static 'images/profile.jpg' %}" alt="">  
+                                
+                       
+                </div>
+
+                
+            </div>
+
+
+        </div>
+    </div>
+</section> 
+
+
+{% endblock body %}

@@ -1,0 +1,257 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load bootstrap5 %}
+
+
+{% block title %}Home{% endblock title %}
+
+{% block body %}
+
+<!-- Home Section  -->
+<div id="home" class="home-section d-flex justify-content-center align-items-center">
+      <div class="text-center text-light text-uppercase">
+            <h1>Unleash your adventure!</h1>
+            <p class="fs-5 text-white-50 mb-4">Indulge in the best experience</p>
+            <div class="btn-home">
+                  <a class="btn-content" href="{% url 'profile' %}">
+                        <span class="btn-title">GET Started</span>
+                        <span class="icon-arrow">
+                              <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                          <path id="arrow-icon-one"
+                                                d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z"
+                                                fill="#FFFFFF"></path>
+                                          <path id="arrow-icon-two"
+                                                d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z"
+                                                fill="#FFFFFF"></path>
+                                          <path id="arrow-icon-three"
+                                                d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z"
+                                                fill="#FFFFFF"></path>
+                                    </g>
+                              </svg>
+                        </span>
+                  </a>
+            </div>
+      </div>
+</div>
+
+
+
+<!--  Section partners -->
+
+<div class="partners text-center pt-5 pb-5">
+      <div class="container">
+            <div class="main-title">
+                  <h2>Partners</h2>
+                  <p class="textred text-uppercase">Descover now</p>
+            </div>
+
+            <div class="row d-flex align-items-center gap-20">
+
+                  <div class="box-icon col-md-12 col-lg-4 ">
+                        <div class="partners_name ">
+                              <img src="{% static 'images/office-1.png' %}" alt="">
+                        </div>
+                  </div>
+
+                  <div class="box-icon col-md-12 col-lg-4 ">
+                        <div class="partners_name ">
+                              <img src="{% static 'images/office-2.png' %}" alt="">
+                        </div>
+                  </div>
+                  <div class="box-icon  col-md-12 col-lg-4 ">
+                        <div class="partners_name ">
+                              <img src="{% static 'images/office-3.png' %}" alt="">
+                        </div>
+                  </div>
+            </div>
+      </div>
+</div>
+
+<div class="">
+      <div class="container">
+            <div class="text-center mt-5 mb-5 position-relative">
+
+                  <p class="maintext main-text text-center mb-5  m-auto"><span>Welcome</span> to your one-stop
+                        destination for
+                        travel essentials! Discover our wide range of high-quality bags and accessories perfect for any
+                        adventure, from weekend getaways to long-term travels. Whether you're a student seeking a
+                        stylish and
+                        functional backpack or a seasoned traveler in need of a durable suitcase, we've got you covered
+                  </p>
+            </div>
+      </div>
+</div>
+
+
+<!--section Our Categories-->
+
+<div class="gallery text-center pb-5 pt-5 " id="services">
+      <div class="container">
+            <div class="main-title text-center mt-5 mb-5 position-relative">
+                  <h2>Gallery</h2>
+                  <p class="textred text-uppercase">gallery of Categories</p>
+            </div>
+
+            <div class="box">
+                  <div class="row align-items-center ">
+
+                        <div class="col-xl-3 col-md-12 col-lg-6 position-relative pt-3 pb-3">
+                              <img class="hov-img img-fluid w-100 h-auto  " src="{% static 'images/card-1.jpg' %}"
+                                    alt="">
+                              <div class="text position-absolute b-25px">
+                                    <p>Students</p>
+                              </div>
+                              <h6 class="coun-text">Productivity </h6>
+                        </div>
+
+
+                        <div class="col-xl-3 col-md-12 col-lg-6 position-relative pt-3 pb-3">
+                              <img class="hov-img img-fluid w-100 h-auto  " src="{% static 'images/card-2.jpg' %}"
+                                    alt="">
+                              <div class="text position-absolute b-25px">
+                                    <p>Hiking</p>
+                              </div>
+                              <h6 class="coun-text">sustainability</h6>
+                        </div>
+
+                        <div class="col-xl-3 col-md-12 col-lg-6 position-relative pt-3 pb-3">
+                              <img class="hov-img img-fluid w-100 h-auto  " src="{% static 'images/card-3.jpg' %}"
+                                    alt="">
+                              <div class="text position-absolute b-25px">
+                                    <p>Travel</p>
+                              </div>
+                              <h6 class="coun-text">luxury </h6>
+                        </div>
+
+                        <div class="col-xl-3 col-md-12 col-lg-6 position-relative pt-3 pb-3 ">
+                              <img class="hov-img img-fluid w-100 h-auto" src="{% static 'images/card-4.jpg' %}" alt="">
+                              <div class="text position-absolute b-25px ">
+                                    <p>Military</p>
+                              </div>
+                              <h6 class="coun-text">durability</h6>
+                        </div>
+
+                  </div>
+            </div>
+      </div>
+</div>
+
+
+
+<!-- Featured Products -->
+<div class="">
+      <div class="container">
+            <div class="main-title text-center mt-5 mb-5 position-relative">
+                  <h2>Featured Products</h2>
+                  <p class="textred text-uppercase">redefine wanderlust</p>
+            </div>
+            <p class="maintext text-center mb-5  m-auto"><span>OBINOOR</span> bags are durable, luxurious, and
+                  sustainable.
+                  They are tough and reliable for active lifestyles. The bags feature spacious compartments, secure
+                  closures,
+                  and customizable options. You can even choose your own materials. <span>OBINOOR</span> bags offer a
+                  perfect
+                  combination of style, functionality, and sustainability.</p>
+      </div>
+</div>
+
+
+
+
+<!--section Prominent Products-->
+
+<div class="gallery text-center pb-5 pt-5 " id="services">
+      <div class="container">
+            <div class="main-title text-center mt-5 mb-5 position-relative">
+                  <h2>Prominent Products</h2>
+                  <p class="textred text-uppercase">gallery of Products</p>
+            </div>
+
+            <div class="box">
+                  <div class="row align-items-center ">
+
+
+                        <div class="col-xl-6 col-md-12 col-lg-6 position-relative pt-3 pb-3">
+                              <img class="hov-img img-fluid w-100 h-auto  "
+                                    src="{% static 'images/Prominent_Product.jpg' %}" alt="">
+
+                              <h6 class="coun-text">Multipurpose</h6>
+                        </div>
+
+
+
+                        <div class="col-xl-6 col-md-12 col-lg-6 position-relative pt-3 pb-3">
+                              <div class="space">
+                                  <div class="space-details">
+                                      <p class="text-title">Overview</p>
+                                      <p class="text-body">Our versatile bags are designed for students and professionals, offering ample storage with a padded laptop sleeve and spacious compartments. Made from durable, tear-resistant fabric, they ensure comfort with padded straps and a breathable back. Stylish and eco-friendly, these bags suit any setting, blending function with sustainability.</p>
+                                      
+                                     
+                                          
+          
+                                      
+          
+                                      <!-- <p>This backpack is a perfect blend of functionality, comfort, and style, catering to the needs of students and professionals alike.</p> -->
+                                      <button onclick="window.location.href='{% url 'product' %}'" class="space-button">More info</button>
+                                  </div>
+                                  <div class="icon">
+                                    <i class="bi bi-recycle"></i>
+                                    <i class="bi bi-shield-check"></i>
+                                    
+                                </div>
+                              </div>
+                          </div>
+                  </div>
+            </div>
+      </div>
+</div>
+</div>
+
+
+
+<div class="textarea"></div>
+      <div class="container">
+            <div class="main-title text-center mt-5 mb-5 position-relative">
+            </div>
+            <p class="maintext text-center mb-5  m-auto">"Your perfect companion for every adventure—our multi-purpose backpack
+                  combines style, durability, and function for life on the go."</p>
+      </div>
+</div>
+
+
+
+
+
+<!--subscribe-->
+<div class="subscribe pt-5 pb-5 text-center text-md-start">
+      <div class="container">
+
+            <from class="row aligin-items-center">
+                  <div class="col-lg-6 col-md-12">
+                        <div class="fw-bold fs-5 mb-3">Subscribe to our Newsletter:</div>
+                  </div>
+
+
+
+                  <div class="col-lg-6 col-md-12 mb-5">
+                              <div class="content">
+                                <form class="subscription" method="POST" >
+                                    {% csrf_token %}
+                                  <input class="add-email" type="email" placeholder="subscribe@obinoor.com">
+                                  <button class="submit-email" type="button">
+                                    <span class="before-submit">Subscribe</span>
+                                    <span class="after-submit">Thank you for subscribing!</span>
+                                   </button>
+                                </form>
+                              </div>
+                            </div>
+                  </div>
+
+            </from>
+      </div>
+</div>
+
+
+{% endblock body %}

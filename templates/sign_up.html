@@ -1,0 +1,82 @@
+{% extends 'base.html'%}
+{% load static %}
+{% load bootstrap5 %}
+
+
+{% comment %} {% load crispy_forms_tags %} {% endcomment %}
+
+{% block title %}
+  sign up
+{% endblock title %}
+
+
+{% block body %}
+  
+
+
+<section class="pb-5 pt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 ">
+
+
+        
+
+        
+      </div>
+      
+      </div>
+    </div>
+
+
+    
+  </div>
+</section>
+
+
+<section class="pb-5 ">
+  <div class="container">
+    <div class="row ">
+      <div class="col-lg-6 col-md-12">
+        <div class="d-flex align-items-center h-custom-2 px-5 ms-xl-4 mt-5 pt-5 pt-xl-0 mt-xl-n5">
+
+          <form method="POST" action="">
+            {% csrf_token %}
+
+            <h3 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">sign up</h3>
+               
+            <div class=" input-group usernameclass form-outline mb-4">{{ form.username }}</div>
+
+            <div class=" input-group emailclass form-outline mb-4">{{ form.email }}</div>
+            
+            <div class="input-group passwordoneclass form-outline mb-4"> {{ form.password1 }}</div>
+            <div class="input-group passwordtwoclass form-outline mb-4">{{ form.password2 }}</div>
+            <div class="pt-1 mb-4">
+              <label class="pb-3x`">Required Password must be at least 8 characters, not too similar to personal info, not a common password, Use letters, digits, and symbols only.</label>
+        
+              <button  class="buttonx mt-3 mb-3" type="submit" value="Signup">Sign up</button>
+            </div>
+
+            <p>Already have an account?<a href="{% url 'login' %}" class="link-info"> Log in</a></p>
+
+          </form>
+
+        </div>
+
+
+      </div>
+
+      <div class="col-lg-6 col-md-12">
+        <div class="">
+          <img class="mov-img img-fluid w-100 h-60"src="{% static 'images/contact.jpg' %}" alt="">
+        </div>
+        
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+{% endblock body %}

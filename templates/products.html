@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load bootstrap5 %}
+
+
+{% block title%}Products{% endblock title %}
+   
+{% block body %}
+<div class="gallery  pb-5 pt-5 " >
+    <div class="container">
+          <div class="main-title text-center mt-5 mb-5 position-relative">
+                <h2>Products</h2>
+          </div>
+
+          <div class="box">
+                <div class="row align-items-center ">
+
+
+                      <div class="col-xl-6 col-md-12 col-lg-6 position-relative pt-3 pb-3">
+                            <img class="mov-img img-fluid w-100 h-auto  "
+                                  src="{% static 'images/Product1.jpg' %}" alt="">
+
+                      </div>
+
+
+
+                      <div class="col-xl-6 col-md-12 col-lg-6 position-relative pt-3 pb-3">
+                            <div class="space">
+                                <div class="space-details">
+                                    <p class="text-title">Specifications:</p>
+                                    <p class="text-body">Designed for students, professionals, and anyone who needs a versatile and reliable bag for everyday use.</p>
+                                    <ul>
+                                        <li><strong>Ample Storage:</strong> Multiple compartments including a padded laptop sleeve (fits up to 15" laptops), main compartment for books/files/clothes, and smaller pockets for accessories.</li>
+                                        <li><strong>Durability:</strong> High-quality, tear-resistant fabric with reinforced stitching.</li>
+                                        <li><strong>Comfort:</strong> Ergonomic padded shoulder straps and breathable mesh back panel.</li>
+                                        <li><strong>Minimalist Aesthetic:</strong> Sleek, modern design suitable for casual and professional environments.</li>
+                                        <li><strong>Eco-Friendly Materials:</strong> Made with sustainably sourced fabrics.</li>
+                                    </ul>
+                                   
+                                        
+        
+                                    
+        
+                                    <!-- <p>This backpack is a perfect blend of functionality, comfort, and style, catering to the needs of students and professionals alike.</p> -->
+                                </div>
+                                <div class="icon">
+                                  <i class="bi bi-recycle"></i>
+                                  <i class="bi bi-shield-check"></i>
+                                  
+                              </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-6 col-md-12 col-lg-6 position-relative pt-3 pb-3">
+                            <img class="mov-img img-fluid w-100 h-auto  "
+                                  src="{% static 'images/Product2.png' %}" alt="">
+
+                      </div>
+
+
+
+                      <div class="col-xl-6 col-md-12 col-lg-6 position-relative pt-3 pb-3">
+                            <div class="space">
+                                <div class="space-details">
+                                    <p class="text-title">Specifications:</p>
+                                    <p class="text-body">Perfect for students, professionals, and anyone seeking a versatile, reliable bag for daily use.</p>
+                                    <ul>
+                                        <li><strong>Target Audience:</strong> Designed for students, professionals, and anyone who needs a versatile and reliable bag for everyday use.</li>
+                                        <li><strong>Versatile Carrying:</strong>Ideal for school, work, commuting, and travel. The padded shoulder straps and top carry handle offer flexibility in how you carry it.</li>
+                                        <li><strong>Organized Storage:</strong> e internal compartments help keep your items organized and easily accessible, whether you’re carrying electronics, documents, or personal items.</li>
+                                        <li><strong>Eco-Friendly Materials:</strong> Made with sustainably sourced fabrics.</li>
+                                    </ul>
+                                   
+                                        
+        
+                                    
+        
+                                    <!-- <p>This backpack is a perfect blend of functionality, comfort, and style, catering to the needs of students and professionals alike.</p> -->
+                                </div>
+                                <div class="icon">
+                                  <i class="bi bi-recycle"></i>
+                                  <i class="bi bi-shield-check"></i>
+                                  
+                              </div>
+                            </div>
+                        </div>
+                </div>
+          </div>
+          <div class="textarea"></div>
+            <div class="main-title text-center mt-5 mb-5 position-relative">
+            </div>
+            <p class="maintext text-center mb-5  m-auto">"Your perfect companion for every adventure—our multi-purpose backpack
+                  combines style, durability, and function for life on the go."</p>
+</div>
+    </div>
+</div>
+
+{% endblock body %}
