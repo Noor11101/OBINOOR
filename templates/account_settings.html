@@ -36,17 +36,18 @@
             
                             </div>
                             <div class="mt-3 mb-3">{{ form.bio }}</div>
+                            <div  class="file-upload" >{{ form.profile_pic }}</div>
                             <!-- <button type="submit" value="Save" onclick="window.location.href='{% url 'profile' %}'" class="buttonx mt-3 mb-4">Save</button> -->
-                            <div class="pt-1 mb-4">
+                            <div class="pt-1 mb-4 d-flex justify-content-around">
                                 <button type="submit" value="Save" onclick="window.location.href='{% url 'profile' %}'" class="buttonx mt-3 mb-4">back</button>
                                 <button class="buttonx mt-3 mb-4" type="submit" value="settings">Save</button>
         
                               </div>
             
-                            <div class="col-lg-6 col-sm-12">
+                            <div class="col-lg-6 col-md-12">
                                 
 
-                                    <div  class="file-upload"">{{ form.profile_pic }}</div>
+                                    
                             </div>
 
                             

@@ -7,10 +7,10 @@
 
 {% block body %}
 
-<!-- Home Section  -->
-<div id="home" class="home-section d-flex justify-content-center align-items-center">
+<!-- start Hero  Section  -->
+<section id="hero" class="hero d-flex justify-content-center align-items-center">
       <div class="text-center text-light text-uppercase">
-            <h1>Unleash your adventure!</h1>
+            <h1 class="">Unleash your adventure!</h1>
             <p class="fs-5 text-white-50 mb-4">Indulge in the best experience</p>
             <div class="btn-home">
                   <a class="btn-content" href="{% url 'profile' %}">
@@ -34,17 +34,18 @@
                   </a>
             </div>
       </div>
-</div>
+</section>
 
+<!-- end Hero  Section  -->
 
 
 <!--  Section partners -->
 
-<div class="partners text-center pt-5 pb-5">
+<section class="partners text-center pt-5 pb-5">
       <div class="container">
             <div class="main-title">
                   <h2>Partners</h2>
-                  <p class="textred text-uppercase">Descover now</p>
+                  <p class="sub-text text-uppercase">Descover now</p>
             </div>
 
             <div class="row d-flex align-items-center gap-20">
@@ -67,13 +68,13 @@
                   </div>
             </div>
       </div>
-</div>
+</section>
 
-<div class="">
+<section class="">
       <div class="container">
             <div class="text-center mt-5 mb-5 position-relative">
 
-                  <p class="maintext main-text text-center mb-5  m-auto"><span>Welcome</span> to your one-stop
+                  <p class="main-text text-center mb-5  m-auto"><span>Welcome</span> to your one-stop
                         destination for
                         travel essentials! Discover our wide range of high-quality bags and accessories perfect for any
                         adventure, from weekend getaways to long-term travels. Whether you're a student seeking a
@@ -82,16 +83,16 @@
                   </p>
             </div>
       </div>
-</div>
+</section>
 
 
 <!--section Our Categories-->
 
-<div class="gallery text-center pb-5 pt-5 " id="services">
+<section class="gallery text-center pb-5 pt-5 " id="services">
       <div class="container">
             <div class="main-title text-center mt-5 mb-5 position-relative">
-                  <h2>Gallery</h2>
-                  <p class="textred text-uppercase">gallery of Categories</p>
+                  <h2 >Gallery</h2>
+                  <p class="sub-text text-uppercase">gallery of Categories</p>
             </div>
 
             <div class="box">
@@ -136,18 +137,18 @@
                   </div>
             </div>
       </div>
-</div>
+</section>
 
 
 
 <!-- Featured Products -->
-<div class="">
+<section class="">
       <div class="container">
             <div class="main-title text-center mt-5 mb-5 position-relative">
                   <h2>Featured Products</h2>
-                  <p class="textred text-uppercase">redefine wanderlust</p>
+                  <p class="sub-text text-uppercase">redefine wanderlust</p>
             </div>
-            <p class="maintext text-center mb-5  m-auto"><span>OBINOOR</span> bags are durable, luxurious, and
+            <p class="main-text text-center mb-5  m-auto"><span>OBINOOR</span> bags are durable, luxurious, and
                   sustainable.
                   They are tough and reliable for active lifestyles. The bags feature spacious compartments, secure
                   closures,
@@ -155,18 +156,18 @@
                   perfect
                   combination of style, functionality, and sustainability.</p>
       </div>
-</div>
+</section>
 
 
 
 
 <!--section Prominent Products-->
 
-<div class="gallery text-center pb-5 pt-5 " id="services">
+<section class=" text-center pb-5 pt-5 " id="services">
       <div class="container">
             <div class="main-title text-center mt-5 mb-5 position-relative">
                   <h2>Prominent Products</h2>
-                  <p class="textred text-uppercase">gallery of Products</p>
+                  <p class="sub-text text-uppercase">gallery of Products</p>
             </div>
 
             <div class="box">
@@ -174,7 +175,7 @@
 
 
                         <div class="col-xl-6 col-md-12 col-lg-6 position-relative pt-3 pb-3">
-                              <img class="hov-img img-fluid w-100 h-auto  "
+                              <img class="mov-img img-fluid w-100 h-auto  "
                                     src="{% static 'images/Prominent_Product.jpg' %}" alt="">
 
                               <h6 class="coun-text">Multipurpose</h6>
@@ -206,16 +207,15 @@
                   </div>
             </div>
       </div>
-</div>
-</div>
+</section>
 
 
 
-<div class="textarea"></div>
+<section class="textarea"></section>
       <div class="container">
             <div class="main-title text-center mt-5 mb-5 position-relative">
             </div>
-            <p class="maintext text-center mb-5  m-auto">"Your perfect companion for every adventure—our multi-purpose backpack
+            <p class="main-text text-center mb-5  m-auto">"Your perfect companion for every adventure—our multi-purpose backpack
                   combines style, durability, and function for life on the go."</p>
       </div>
 </div>
@@ -225,18 +225,18 @@
 
 
 <!--subscribe-->
-<div class="subscribe pt-5 pb-5 text-center text-md-start">
+<section class="subscribe pt-5 pb-5 text-center text-md-start">
       <div class="container">
 
-            <from class="row aligin-items-center">
+            <div class="row ">
                   <div class="col-lg-6 col-md-12">
-                        <div class="fw-bold fs-5 mb-3">Subscribe to our Newsletter:</div>
+                        <div class="fw-bold fs-5 mb-5">Subscribe to our Newsletter:</div>
                   </div>
 
 
 
-                  <div class="col-lg-6 col-md-12 mb-5">
-                              <div class="content">
+                  <div class="col-lg-6 col-md-12 mb-5  d-flex justify-content-center">
+                              <div class="content ">
                                 <form class="subscription" method="POST" >
                                     {% csrf_token %}
                                   <input class="add-email" type="email" placeholder="subscribe@obinoor.com">
@@ -249,9 +249,9 @@
                             </div>
                   </div>
 
-            </from>
+            </div>
       </div>
-</div>
+</section>
 
 
 {% endblock body %}

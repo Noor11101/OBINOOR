@@ -2,14 +2,14 @@
 
 // contact form
 const form = document.querySelector('form');
-const first_name = document.getElementById("firstName");
-const last_name = document.getElementById("lastName");
+const name = document.getElementById("Name");
+// const last_name = document.getElementById("lastName");
 const email = document.getElementById("email");
 const company= document.getElementById("company");
 const message = document.getElementById("message");
 
 function sendEmail() {
-  const bodyMessage = `First Name: ${firstName.value} <br> Last Name: ${lastName.value} <br> 
+  const bodyMessage = `Name: ${Name.value} <br> 
   Email: ${email.value}<br> Company: ${company.value}<br> Message: ${message.value}` ;
 
 
@@ -72,8 +72,7 @@ form.addEventListener("submit", (e) => {
   checkInput();
 
   if (
-      !first_name.classList.contains("error") &&
-      !last_name.classList.contains("error") &&
+      !name.classList.contains("error") &&
       !email.classList.contains("error") &&
       !company.classList.contains("error") &&
       !message.classList.contains("error")

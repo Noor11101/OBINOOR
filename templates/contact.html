@@ -17,49 +17,63 @@ Contact
 <section class="pb-5 pt-5">
     
     <div class="container">
-        <div class="title">
+        
             <div class="main-title text-center mt-5 mb-5 position-relative">
-                <h2>Contact Us</h2>
-          </div>
-        </div>
+                <h2>Contact Us</h2></div>
         <div class="row pt-5 pb-5">
     
-            <div class="col-xl-4 ">
-                <img class="mov-img img-fluid w-100 h-auto  "
-                                        src="{% static 'images/contact.jpg' %}" alt="">
+            <div class="col-md-12 col-lg-6 ">
+                <img class="mov-img img-fluid w-100 h-auto mb-5"
+                                        src="{% static 'images/card-contect.jpg' %}" alt="">
     
             </div>
-            <div class="col-xl-8 ">
-                <div class="main-title text-center mb-5 mt-5">
-                    <h2>Get in Touch</h2>
-                </div>
-                <form method="POST">
+            <div class="box col-md-12 col-lg-6 ">
+                
+                <form class="" method="POST">
                   {% csrf_token %}
-                  <div class="row">
-                    <div class="col-6 mb-3">
+                  <div>
+                    <!-- <div class="col-lg-6 mb-3 mt-3">
                       <input type="text" placeholder="First Name" class="inputx" id="firstName">
                     </div>
-                    <div class="col-6 mb-3">
+                    <div class="col-lg-6 mb-3 mt-3">
                       <input type="text" placeholder="Last Name" class="inputx" id="lastName">
+                    </div> -->
+                    <div class="mb-3">
+                      <input type="text" placeholder="Full Name" class="inputx" id="Name">
                     </div>
-                    <div class="col-12  mb-3">
+                    <div class="mb-3">
                       <input type="email" placeholder="Email Address" class="inputx" id="email">
                     </div>
-                    <div class="col-12 mb-3">
+                    <div class="mb-3">
                       <input type="text" class="inputx" placeholder="Company" id="company">
                     </div>
-                    <div class="col-12">
+                    <div class="mb-3">
                       <textarea autocomplete="off" id="message" placeholder="Message"></textarea>
                     </div>
-                    <button class="buttonx mt-3 mb-3"  type="submit">Submit</button>
+                    
                   </div>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <button class="buttonx mt-3 mb-3 "  type="submit">submit</button>
+                  </div>
+
+                  
                 </form>
                 
     
             </div>
         </div>
+
+        <div class="textarea"></div>
+            <div class="main-title text-center mt-5 mb-5 position-relative">
+            </div>
+            <p class="main-text text-center mb-5  m-auto">"Your perfect companion for every adventure—our multi-purpose backpack
+                  combines style, durability, and function for life on the go."</p>
+        </div>
     
      </div>
+
+
+     
 
 </section>
 

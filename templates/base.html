@@ -3,6 +3,8 @@
 <html lang="en">
   <head>{%block head%}{%endblock head%}
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>{% block title %}{% endblock title %}</title>
     
     <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
@@ -47,8 +49,7 @@
     <nav class="navbar navbar-expand-lg position-fixed w-100">
       <div class="container">
         <a class="navbar-brand" href="{% url 'index' %}">
-          <img class="logo" src="{% static 'images/obinoor.png' %}" alt="Logo"
-        /></a>
+          <img class="logo" src="{% static 'images/obinoor.png' %}" alt="Logo"/></a>
 
         <button
           class="navbar-toggler"
@@ -65,36 +66,27 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link p-2 p-lg-3 active" href="{% url 'index' %}"
-                >Home</a
-              >
+              <a class="nav-link p-2 p-lg-3 active" href="{% url 'index' %}">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link p-2 p-lg-3" href="{% url 'product' %}"
-                >Products</a
-              >
+              <a class="nav-link p-2 p-lg-3" href="{% url 'product' %}">Products</a>
             </li>
             <li class="nav-item">
               <a class="nav-link p-2 p-lg-3" href="{% url 'about' %}">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link p-2 p-lg-3" href="{% url 'contact' %}"
-                >Contact Us</a
-              >
+              <a class="nav-link p-2 p-lg-3" href="{% url 'contact' %}">Contact Us</a>
             </li>
           </ul>
-          <button
-            class="butx"
-            onclick="window.location.href='{% url 'signup' %}'"
-          >
-            Sign up
-          </button>
+          <button class="but" onclick="window.location.href='{% url 'signup' %}'">Sign up</button>
         </div>
       </div>
     </nav>
 
     {% block body %} {% endblock body %}
 
+
+    
     <!-- footer -->
     <div class="footer pt-5 pb-5 text-white-50 text-center text-md-start">
       <div class="container">
