@@ -1,13 +1,26 @@
 // Select the <nav> element in the document
-const nav = document.querySelector("nav");
+// const nav = document.querySelector("nav");
 
-// Add a scroll event listener to the window
-window.addEventListener("scroll", function() {
-    // Toggle the "sticky" class based on the scroll position
-    nav.classList.toggle("sticky", this.window.scrollY > 0);
-});
+// // Add a scroll event listener to the window
+// window.addEventListener("scroll", function() {
+//     // Toggle the "sticky" class based on the scroll position
+//     nav.classList.toggle("sticky", this.window.scrollY > 0);
+// });
 
 
+  // Get all nav links
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  // Loop through each link
+  navLinks.forEach(link => {
+    // Compare the link's href to the current URL
+    if (link.href === window.location.href) {
+      // Remove active class from any other link
+      document.querySelector('.nav-link.active')?.classList.remove('active');
+      // Add active class to the current link
+      link.classList.add('active');
+    }
+  });
 
 
 // // scroll sections

@@ -140,8 +140,8 @@ body {
 }
 
 .navbar .navbar-toggler {
-    color: var(--White);
-    font-size: 25px;
+    color: var(--Dark);
+    font-size: 35px;
     border-color: var(--White);
 }
 
@@ -186,6 +186,7 @@ body {
  }
  
 .but::before {
+  
   content: "";
   position: absolute;
   top: 0;
@@ -253,6 +254,7 @@ body {
 }
 
 .btn-content:hover, .btn-content:focus {
+  text-decoration: none;
   transition: 0.5s;
   -webkit-animation: btn-content 1s;
   animation: btn-content 1s;
